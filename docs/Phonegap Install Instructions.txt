@@ -1,0 +1,75 @@
+Phonegap instructions for Windows:
+
+1.) Install nodejs
+	https://nodejs.org/download/
+	
+	Test if worked:
+		in cmd: node --version
+
+2.) Install Cordova
+	npm install -g cordova@3.6.3-0.2.13
+
+	Test if worked:
+		cmd: cordova --version
+
+3.) Check if java installed: cmd: javac --version
+    
+    If not:
+	1.) DL: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+	2.) Install. Pay attention to directory installing in.
+	3.) After install:
+		1. Open Control panel -> System -> Advanced System Settings
+		2. Advanced Tab -> Environment Variables button
+		3. User Variables: Click on "PATH" and "Edit"
+			- if no PATH, create "New"
+		4. At the end of "Variable value" add semicolon followed by path to bin directory of JDK (^)
+			- i.e. ;C:\Program Files\Java\jdk1.8.0_11\bin
+ 
+		5. Add "JAVA_HOME" variable as well. The variable value enter path to directory where jdk is installed
+			- i.e. C:\Program Files\Java\jdk1.8.0_11
+		6. OK everything
+
+4.) Install Apache Ant
+	1.) DL zip (1.9.5): http://ant.apache.org/bindownload.cgi
+	2.) Create folder anywhere you want (I did Users\Arsen) called Ant.
+	3.) Unzip zip in the ant folder.
+	4.) Do same as for java with variables -> Add to PATH variable value(don't forget semicolon)
+		i.e. ;C:\Users\Arsen\Ant\bin
+	5.) Do same as for java with ANT_HOME
+		i.e. C:\Users\Arsen\Ant
+	6.) Check if installed: cmd: ant -version
+		
+
+	4.) Check if installed: cmd: javac -version
+		- Make sure restarted
+
+5.) Install phonegap
+	npm install -g phonegap
+
+FOR PLATFORMS:
+
+ANDROID:
+
+
+1.) Install Android SDK
+	1.) DL: Recommended package: http://developer.android.com/sdk/index.html#Other
+	2.) Do same as Java and Ant -> Add to PATH variable value
+	3.) Two additions to PATH: platform-tools and tools. Directory where you installed sdk (not android-sdk, that's for android studio)
+		i.e. C:\Users\Arsen\AppData\Local\Android\sdk\tools
+		i.e. C:\Users\Arsen\AppData\Local\Android\sdk\platform-tools
+	4.) in cmd type: android 
+		- opens package manager
+
+2.) Install Android Build Tools, Rev. 19
+	1.) Open package manager (if going in order it should be open already)
+	2.) On bottom right, click Install x Packages after it finishes loading.
+	3.) Afterwards, select to install:
+		- Tools
+		- Android 4.4.2
+		
+
+WINDOWS:
+
+
+	
+
