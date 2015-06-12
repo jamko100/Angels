@@ -54,9 +54,9 @@ ANDROID:
 1.) Install Android SDK
 	1.) DL: Recommended package: http://developer.android.com/sdk/index.html#Other
 	2.) Do same as Java and Ant -> Add to PATH variable value
-	3.) Two additions to PATH: platform-tools and tools. Directory where you installed sdk (not android-sdk, that's for android studio)
-		i.e. C:\Users\Arsen\AppData\Local\Android\sdk\tools
-		i.e. C:\Users\Arsen\AppData\Local\Android\sdk\platform-tools
+	3.) Two additions to PATH: platform-tools and tools. Directory where you installed sdk (not sdk, that's for android studio)
+		i.e. C:\Users\Arsen\AppData\Local\Android\android-sdk\tools
+		i.e. C:\Users\Arsen\AppData\Local\Android\android-sdk\platform-tools
 	4.) in cmd type: android 
 		- opens package manager
 
