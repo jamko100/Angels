@@ -1,0 +1,34 @@
+To push your changes up to Github:
+
+Commands: (step by step)
+
+Before working: git pull main master
+	- take all of the edits I have done
+
+git add [file path]
+	- adds a file to be tracked by Github
+	- typically after adding a new file
+	- also for not txt files (i.e. doc, jpeg)
+	- i.e. git add docs/contracts/development-service-contract.doc
+
+git add -p
+	- do this after changing code
+	- shows you list by list what changes you've done 
+	- can select to accept changes or delete them
+		- there are alot of other options but i don't know what they do
+
+git commit -m "[Message]"
+	- this is for when you are done working and want to save your changes
+	- write a very short description of what you've worked on in the [Message]
+	
+git push origin master
+	- pushes your changes to your repository
+
+
+Making a Pull Request
+	- This is for adding your changes to my(the main) repository. It's a request for me to pull from your repository, so everything should be working perfectly, 	and everything should be the same except for the things you've edited
+
+	1. on Github, go to your "Angels" repository, not mine
+	2. On the left panel, click "Pull requests"
+	3. Create new pull request
+	4. Submit
